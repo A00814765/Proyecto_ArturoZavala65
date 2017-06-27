@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile - Napcode</title>
+	<meta charset="UTF-8"/>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/homeScript.js"></script>
+	<script type="text/javascript" src="js/registrationScript.js"></script>
+	<script type="text/javascript" src="js/sessionScript.js"></script>
+	<script type="text/javascript" src="js/newCode.js"></script>
+	<script type="text/javascript" src="js/addInv.js"></script>
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body id="profile">
+	<div id="barraLogo">
+		<span id="barraNap"><a id="linkHome" href="home.html">nap</a></span>
+		<span id="barraCode"><a id="linkHomeCode" href="home.html">code</a></span>
+		<div>
+			<span id="session"><a id="profileSession" href="profile.html"></a></span>
+			<input id="cerrarSesion" type="button" value="Cerrar sesión">
+			<input id="newNap" type="button" value="Crear nuevo napcode" class="buttonPop">
+	    		<div class="dialog" id="myform">
+	    			<label id ="titleCrear"> Crea tu Napcode<br/></label>
+					<label id ="proyectoLabel"> Nombre del proyecto<br/></label>
+					<input id="proyecto" type="text" class="text" name="nombreProyecto"><br/>
+					<label id ="syntaxLabel">Syntax (Ej. C++)<br/></label>
+					<input id="syntax" type="text" class="text" name="nombreSyntax"><br/>
+					<input id="crearBtn" type="button" class="buttonNap" name="submit" value="Crear">
+					<input id="cancelButton" type="reset" class="buttonCancel" name="cancel" value="Cancelar">			
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div id="profileTitle">Tus Napcodes</div>
+	<div id="profileContain">
+		<table id="profileData">
+            <tr>
+                <th>Proyecto</th>
+                <th>Syntax</th>
+                <th>Fecha de creación</th>
+                <th>Creador</th>
+            </tr>
+        </table>
+	</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Code - Napcode</title>
+	<meta charset="UTF-8"/>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">  
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script src="https://rawgit.com/jackmoore/autosize/master/dist/autosize.min.js"></script>
+	<script type="text/javascript" src="js/sessionScript.js"></script>
+	<script type="text/javascript" src="js/codeVerif.js"></script>
+	<script type="text/javascript" src="js/addInv.js"></script>
+	<script type="text/javascript" src="js/download.js"></script>
+</head>
+<body id="code">
+	<div id="barraLogo">
+		<span id="barraNap"><a id="linkHome" href="home.html">nap</a></span>
+		<span id="barraCode"><a id="linkHomeCode" href="home.html">code</a></span>
+		<div>
+			<span id="session"><a id="profileSession" href="profile.html"></a></span>
+			<input id="cerrarSesionCode" type="button" value="Cerrar sesión">
+			<span id="codeName"></span>
+			<input id="addInv" type="button" value="Compartir código" class="buttonPopAdd">
+			<input id="downCode" type="button" value="Descarga código" class="downCode">
+			<input id="deleteCode" type="button" value="Borrar código" class="deleteCode">
+			<div class="dialog" id="myformAdd">
+	    			<label id ="titleCrearAdd"> Invita a otros colaboradores<br/></label>
+					<label id ="emailLabel"> Email de colaborador<br/></label>
+					<input id="emailColaborador" type="text" class="text" name="emailColaborador"><br/>
+					<input id="crearBtnAdd" type="button" class="buttonNap" name="submit" value="Invitar">
+					<input id="cancelButtonAdd" type="reset" class="buttonCancel" name="cancel" value="Cancelar">			
+				</div>
+		</div>
+	</div>
+	<div id="auto">
+		<textarea id="codeText" rows="40"> </textarea>
+	</div>
+</body>
+</html>
